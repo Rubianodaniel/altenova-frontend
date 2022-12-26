@@ -1,5 +1,5 @@
 import {combineReducers} from "redux"
-import { movie } from "./Movie"
+import movie from "./Movie"
 
 
 

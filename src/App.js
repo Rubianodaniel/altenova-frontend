@@ -8,12 +8,13 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 function App() {
   return (
   <Provider store={store}>
+   
     <Router>
       <Routes>
-        {{/* Error Display */}}
+        {/* Error Display */}
         <Route path="*" element ={<Error404/>}/>
 
-        {{/* Home Display */}}
+        {/* Home Display */}
         <Route path = "/" element={<Home/>}/>
 
       </Routes>

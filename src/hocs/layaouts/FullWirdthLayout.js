@@ -8,7 +8,7 @@ const FullWidthLayouth = ({ children }) => {
         <>
             <NavBar />
             {children}
-            <Footer/>
+            <Footer />
         </>
     )
 }

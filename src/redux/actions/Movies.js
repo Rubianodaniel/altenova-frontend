@@ -7,6 +7,8 @@ import {
     GET_MOVIE_FAIL
 } from "./types"
 
+
+
 export const get_movies_list = () => async dispatch => {
 
     const config = {
@@ -23,6 +25,10 @@ export const get_movies_list = () => async dispatch => {
                 type: GET_MOVIES_LIST_SUCCESS,
                 payload: res.data
             })
+        }else {
+            dispatch({
+                type: GET_MOVIES_LIST_FAIL
+            })
         }
     }
     catch {
@@ -34,6 +40,7 @@ export const get_movies_list = () => async dispatch => {
     }
 
 }
+
 
 export const get_movie_element = (p) => async dispatch => {
 
@@ -50,6 +57,10 @@ export const get_movie_element = (p) => async dispatch => {
             dispatch({
                 type: GET_MOVIE_SUCCES,
                 payload: res.data
+            })
+        } else{
+            dispatch({
+                type: GET_MOVIE_FAIL
             })
         }
     }
